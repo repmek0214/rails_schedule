@@ -1,0 +1,31 @@
+<!-- app/views/schedules/_form.html.erb -->
+<%= form_with model: @schedule, local: true do |form| %>
+    <div class="field">
+      <%= form.label :title, "タイトル" %>
+      <%= form.text_field :title %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :start_date, "開始日" %>
+      <%= form.date_select :start_date %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :end_date, "終了日" %>
+      <%= form.date_select :end_date %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :all_day, "終日" %>
+      <%= form.check_box :all_day %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :memo, "メモ" %>
+      <%= form.text_area :memo %>
+    </div>
+  
+    <div class="actions">
+      <%= form.submit "登録完了する" %>
+    </div>
+  <% end %>

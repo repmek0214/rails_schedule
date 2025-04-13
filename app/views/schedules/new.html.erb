@@ -1,2 +1,5 @@
-<h1>Schedules#new</h1>
-<p>Find me in app/views/schedules/new.html.erb</p>
+<!-- app/views/schedules/new.html.erb -->
+<h1>新規予定追加</h1>
+<%= render partial: 'form', schedule: @schedule %>
+<%= link_to '一覧に戻る', schedules_path %>
+
