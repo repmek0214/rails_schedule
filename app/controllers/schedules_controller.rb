@@ -15,6 +15,7 @@ class SchedulesController < ApplicationController
   def create
     @schedule = Schedule.new(schedule_params)
     if @schedule.save
+      flash[:notice] = "予定を新規登録しました"
       redirect_to :schedules
     else
       render :new
@@ -23,6 +24,7 @@ class SchedulesController < ApplicationController
 
   def update
     if @schedule.update(schedule_params)
+      flash[:notice] = "予定を更新しました"
       redirect_to :schedules
     else
       render :new
@@ -34,6 +36,7 @@ class SchedulesController < ApplicationController
 
   def destroy
     @schedule.destroy
+    flash[:notice] = "予定を削除しました"
     redirect_to :schedules
   end
 
