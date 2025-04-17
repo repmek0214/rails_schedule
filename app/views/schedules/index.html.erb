@@ -1,10 +1,8 @@
 <!-- app/views/schedules/index.html.erb -->
-<h1>予定一覧</h1>
-
+<h1>予定一覧</h1
 <% if flash[:notice] %>
  <p class="notice"><%= flash[:notice] %></p>
 <% end %>
-
 <p>本日の日付: <%= Time.zone.now.strftime('%Y/%m/%d') %></p>
 <p>予定の合計数: <%= @schedules.nil? ? 0 : @schedules.count %></p>
 <table>
