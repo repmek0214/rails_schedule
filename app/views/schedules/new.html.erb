@@ -1,5 +1,6 @@
 <!-- app/views/schedules/new.html.erb -->
 <h1>新規予定追加</h1>
 <%= render partial: 'form', schedule: @schedule %>
+<%= render "shared/error", obj: @schedule %> 
 <%= link_to '一覧に戻る', schedules_path %>
 
