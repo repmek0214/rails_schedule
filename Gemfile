@@ -5,6 +5,7 @@ ruby '3.3.3'
 gem 'concurrent-ruby', '1.3.4'
 gem 'mutex_m'
 gem 'bigdecimal'
+gem 'rails-i18n'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '= 6.1.3.2'
